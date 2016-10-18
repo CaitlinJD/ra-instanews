@@ -1,0 +1,123 @@
+/* 
+Used for brand guidelines
+ - you can make one change and it will update all the other instances
+$base-color: #ff0000;
+
+Used when you have a grid system
+    -you want every column to have a similar margin around it
+$grid-gutter: 15px;
+*/
+/* $ defines a variable */
+.box {
+  border: 1px solid black; }
+
+/* Sass variable
+    $var name: property; 
+
+    Create new sass files for fonts; tables; grids; forms; variables; colors
+*/
+.message, .success, .fail {
+  border: 1px solid black;
+  padding: 20px; }
+
+.success {
+  background-color: green; }
+
+.fail {
+  background-color: red; }
+
+/* Nesting */
+div.box a {
+  color: blue; }
+  div.box a:hover {
+    color: green; }
+  div.box a:visited {
+    color: red; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  color: #c2c2c2;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000; }
+
+/* FLEX */
+.flex {
+  display: flex; }
+
+.flex-column {
+  flex-direction: column; }
+
+.justify-center {
+  justify-content: center; }
+
+.align-center {
+  align-items: center; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.flex-basis-article {
+  flex-basis: 100%; }
+
+/* MARGINS & PADDING & LINE HEIGHT */
+.line-height-med {
+  line-height: 2em;
+  padding: 1em; }
+
+.margin-sm {
+  margin: 1em; }
+
+.padding-lrg {
+  margin: 2em; }
+
+/* HEADER */
+.header-height {
+  height: 80vh; }
+
+.logo-width {
+  width: 60%; }
+
+/* RESULTS SECTION */
+article {
+  display: none;
+  position: relative;
+  height: 350px; }
+
+.excerpt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em; }
+
+.link-color {
+  color: #fff; }
+
+/* FOOTER */
+footer {
+  width: 100%; }
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+  .logo-width {
+    width: 300px; }
+  .flex-basis20 {
+    width: 300px; }
+  .tablet-flex-row {
+    flex-direction: row; }
+  .tablet-align-left {
+    align-items: flex-start; }
+  .flex-basis-article {
+    flex-basis: 33%; } }
+
+/* desktop */
+@media only screen and (min-width: 1000px) {
+  .desktop-justify-left {
+    justify-content: flex-start; }
+  .flex-basis-article {
+    flex-basis: 25%; } }

@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+        height: 85vh;
+        @media only screen and (min-width: 600px) {
+            flex-direction: row;
+        }
+        @media only screen and (min-width: 1000px) {
+
+        }
+
+    img {
+        width: 60%; 
+        padding: 15px;
+        @media only screen and (min-width: 600px) {
+            width: 330px;
+        }
+    }
+    
+    p {
+        padding: 1em 0; 
+      
+    }
+    
+    select {
+        margin-bottom: 1.5em;
+    }
+}
+
+.loader {
+    display: none;
+}
+
+article {
+        display: none;
+        position: relative;
+        height: 350px;
+    
+    .space-holder {
+        height: 100%;
+    }
+    
+    .excerpt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.8em;
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 2em;
+}

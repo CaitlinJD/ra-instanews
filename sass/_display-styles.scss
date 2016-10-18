@@ -1,0 +1,16 @@
+body {    
+    background-color: #000;
+}
+
+article {
+    
+    &:hover .excerpt {
+       opacity: 1;
+    }
+    
+    .excerpt {
+        opacity: 0;
+        background-color: rgba(0,0,0,0.5);
+        transition: all 0.4s ease-in;
+    }    
+}
