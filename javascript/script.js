@@ -31,7 +31,7 @@ $(document).ready(function(){
         
         // ANIMATE THE HEADER MOVEMENT
         $("header.flex").css("height", "auto");
-        $(".logo").animate({"width":"130px"}, 400);         
+        $(".logo").animate({"width":"131px"}, 400);         
         $("img").animate({"margin":"0 3em"}, 400);
         
         // AJAX CALL TO GET THE ARTICLES
